@@ -1,0 +1,467 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --offwhite:#ECEEE3;
+    --offwhite2:#F0F0E9;
+    --verdebroto:#8AEA7C;
+    --verdeamazonia:#1BA407;
+    --verdefolha:#17412D;
+    --azulclarissimo:#42B0D9;
+    --azulmaisclaro:#007AFF;
+    --azulescuro:#203A48;
+    --azulmaisescuro:#16425A;
+    --branco: #F8F8F8;
+    --azul: #076588;
+    --space: 3vw;
+    --cinza: #DFDFDD;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background:var(--offwhite2) ;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    height: 94vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    background:var(--offwhite);
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 var(--space);
+}
+
+nav a {
+  color: var(--verdenoite);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+nav .rotes {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+nav .logo img{
+    height: 2.5rem;
+    margin-top: 0.1rem;
+}
+
+nav .logo p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: var(--azul);
+}
+
+.pages {
+  color: var(--offwhite);
+   background-color: var(--verdeamazonia);
+   padding: 0.2rem;
+   border-radius: 50px;
+   align-items: center;  
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   top: 0.6rem;
+   right: var(--space);
+   width: 10rem;
+   overflow: hidden;
+   height: 1.2rem;
+   transition: 0.5s;
+   padding: 0 1rem;
+}
+
+.pages div{
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--branco);
+    color: var(--branco);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pages div a{
+    color: var(--branco) !important;
+}
+.pages div:nth-child(1){
+    border: 0px;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    
+}
+
+.pages:hover{
+    border-radius: 15px;
+    height: 18rem;
+
+}
+
+nav .linkform, .linkformicts{
+   color: var(--offwhite);
+   background-color: var(--verdeamazonia);
+   padding: 0.2rem;
+   border-radius: 50px;
+   align-items: center;
+}
+
+.linkformicts{
+    color: var(--verdeamazonia);
+    background-color: var(--branco)
+}
+.container{
+    padding: 0 var(--space) 0 var(--space);
+}
+
+.frame {
+    position: relative; 
+    width: 100%;
+    height: 30rem;
+    background-image: url(./img/mine.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center; 
+    padding: 2rem;
+    margin-top: 6vh;
+}
+
+.title {
+    
+    color: white; 
+    font-size: 2rem;
+}
+
+.Solicite, .Formulario {
+    display: flex;
+    color: var(--verdenoite);
+    background-color: var(--azulclarissimo);
+    font-size: 1.2rem; 
+    padding: 0.5rem 0.5rem;
+    height: auto; 
+    gap: 1rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    text-decoration: none;
+    align-items: center;
+    width: min-content;
+}
+
+.containerbotao{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.Formulario{
+    background-color: var(--offwhite);
+    color: var(--azulclarissimo);
+}
+
+.Solicite img, .Formulario img {
+    height: 2rem;
+}
+
+
+.green-text {
+    color: var(--azulclarissimo);
+}
+
+.blue-text {
+    color: var(--azulclarissimo);
+}
+
+.left-text p {
+   color: var(--verdefolha);
+}
+
+.left-text h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--verdenoite); 
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.container2{
+    padding-left: var(--space);
+}
+
+.containersubtitulo {
+    font-size: 1.6rem;
+    color: var(--verdenoite);
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.servicos{
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+}
+
+.servicos .card {
+    background-color: var(--branco);
+    color: var(--azulescuro);
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 15rem;
+    min-width: 15rem;
+    height: 15rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+.servicos .card img {
+    width: 4rem; 
+    margin-top: 2rem;
+}
+
+
+.containerregras {
+    background-color: var(--cinza);
+    display: flex;
+    width: 100%;
+    height: min-content;
+    align-items: flex-start;
+    margin-top: 3.5rem;
+    padding: 2rem;
+}
+
+.containerregras h2{
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.containerregras h3{
+    margin-bottom: 2rem; 
+}
+
+.containerPdf{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+
+.containerPdf a{
+    font-size: 1.5rem;
+    background-color: #17412D;
+    color: var(--branco);
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.linkinfra{
+    color: var(--verdeamazonia);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.regrascontent ul{
+    margin-left: 2rem;
+}
+
+.regrascontent ol{
+    margin-left: 2rem;
+}
+
+.regrascontent p {
+  
+    font-size: 0.9rem;
+}
+
+.bold  {
+    font-weight: bold;
+}
+
+.containercontatos{
+    background-color: var(--azulescuro);
+    height: min-content;
+    margin-top: 3.5rem;
+    padding: 2.8rem;
+    color: var(--offwhite);
+    display: flex;
+    justify-content: space-between;
+}
+
+.containercontatos p{
+    font-size: 1rem;
+}
+.informacao{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.informacao h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.listacontatos{
+    border-left: 2px solid var(--azulclarissimo);
+    padding-left: var(--space);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    text-align: end;
+}
+
+.contatos p{
+    font-size: 1rem;
+}
+
+.telefone {
+    font-size: 1.5rem !important;
+}
+
+.break{
+    display: none ;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 915px) {
+
+    nav{
+        padding: 0 var(--space);
+    }
+    .pages{
+        position: relative;
+        height: 18rem;
+        border-radius: 15px;
+        text-align: right;
+    }
+
+    
+    .break,button{
+        display: block ;
+    }
+    .rotes{
+        align-items: flex-end !important;
+        position: fixed;
+        background-color: var(--verdefolha);
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        right: -15rem;
+        gap: 1rem !important;
+        height: 100vh;
+        padding: 1rem;
+        text-align: end;
+        width: 15rem;
+        transition: 1s right;
+        z-index: 99;
+    }
+
+    .linkform, .linkformicts{
+        background: none !important;
+        color: var(--verdebroto) !important;
+        padding: 0 !important;
+    }
+    
+    nav a {
+        color: var(--offwhite) !important;
+    }
+}
+
+
+@media only screen and (max-width: 465px) {
+    .title{
+        font-size: 1rem;
+    }
+
+    .Solicite, .Formulario{
+        font-size: 0.7rem;
+    }
+
+    .Solicite img, .Formulario img{
+        height: 1rem;
+    }
+
+    .containerPdf a{
+        font-size: 1rem;
+        background-color: #17412D;
+        color: var(--branco);
+        padding: 10px 20px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .containerPdf img{
+        height: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .containerbotao{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .containercontatos{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .listacontatos{
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .containercontatos .containerbotao{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
