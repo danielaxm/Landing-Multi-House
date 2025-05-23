@@ -146,7 +146,8 @@ nav .linkform, .linkformicts{
     position: relative; 
     width: 100%;
     height: 30rem;
-    background-image: url(./img/mine.jpg);
+    background-image: url(./img/mineeeeeeee\ \(1\).jpg);
+    background-position: center center;
     background-repeat: no-repeat; 
     background-size: cover; 
     border-radius: 1.5rem;
@@ -443,6 +444,10 @@ button{
     .containerPdf img{
         height: 1.6rem;
     }
+
+    .frame {
+     background-image: url(./img/mine\ longe.jpg);
+}
 }
 
 @media only screen and (max-width: 670px) {
